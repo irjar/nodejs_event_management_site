@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Search for a partial file _head -->
+
+<head>
+<% include partials/_head %>
+</head>
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+to offset from top for the position of scroll. -->
+<body class="connect" id="connect" data-spy="scroll" onload="checkCookie()" data-target=".navbar" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<div class="row">
+		<div class="col-sm-8">    
+			<div class="jumbotron">
+				<h2>Get in touch</h2>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapsegen">
+							General enquiries</a>
+							</h4>
+						</div>
+						<div id="collapsegen" class="panel-collapse collapse in">
+							<div class="panel-body">If you would like to contact us please send us an email to <a href="mailto:enquiries@bigfoot.com?subject=HTML link">enquiries@bigfoot.com</a>. </div>
+						</div>
+					</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapsespon">
+						Sponsorship</a>
+						</h4>
+					</div>
+					<div id="collapsespon" class="panel-collapse collapse">
+						<div class="panel-body">For the sponsorship enquiries please send us an email to <a href="mailto:sponsorship.enquiries@bigfoot.com?subject=HTML link">sponsorship@bigfoot.com</a>.</div>
+						</div>
+					</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapsepress">
+						Press and media</a>
+						</h4>
+					</div>
+				<div id="collapsepress" class="panel-collapse collapse">
+					<div class="panel-body">For the press and media enquiries please send us an email to <a href="mailto:media.press.enquiries@bigfoot.com?subject=HTML link">media.press@bigfoot.com</a>.</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseband">
+					Bands</a>
+					</h4>
+				</div>
+				<div id="collapseband" class="panel-collapse collapse">
+					<div class="panel-body">For the enquiries about performing at the festival please send us an email to <a href="mailto:vendors.enquiries@bigfoot.com?subject=HTML link">perform@bigfoot.com</a>.</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapsevend">
+						Vendors</a>
+						</h4>
+					</div>
+					<div id="collapsevend" class="panel-collapse collapse">
+						<div class="panel-body">For the enquiries about vending opportunities please send us an email to <a href="mailto:vendors.enquiries@bigfoot.com?subject=HTML link">vendors@bigfoot.com</a>.</div>
+						</div>
+					</div>
+			</div> 
+		</div>
+	</div>
+
+    <div class="col-sm-4"> 
+        <div class="well well-lg">
+            <h3>Connect with us!</h3> 
+			<a href="https://www.facebook.com/bigfootbandcamp/" target="_blank"> <i class="fa fa-facebook fa-4x"></i></a>
+			<a href="https://twitter.com/search-home?lang=en-gb" target="_blank"> <i class="fa fa-twitter fa-4x"></i></a>
+			<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
+			<a href="https://www.youtube.com/?gl=GB&hl=en-GB" target="_blank"><i class="fa fa-youtube fa-4x"></i></a>
+			<a href="https://www.pinterest.co.uk/" target="_blank"><i class="fa fa-pinterest fa-4x"></i></a>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>

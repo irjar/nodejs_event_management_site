@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+* to offset from top for the position of scroll. -->
+<body class="index" id="index" data-spy="scroll" data-target=".navbar" data-offset="60" onload="checkCookie()">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<!--Element bg-1 with an image of a band-->
+	<div class="container-fluid bg-1 text-center">
+		<h3>LIVE MUSIC-ART-CAMPING</h3>
+			<img src="img/15_band.jpg" class="img-responsive" alt="Band">
+		<h3>FESTIVAL</h3>
+	</div>
+	<!--Element bg-2 with festival dates-->
+	<div class="container-fluid bg-2 text-center">
+		<h3>August 23 - 26</h3>
+		<p>2020</p>
+	</div>
+	<!--Element bg-3 with sale information-->
+	<div class="container-fluid bg-3 text-center">
+		<h3>Bigfoot 2020 ADVANCE SALE </h3>
+		<p>Tickets on sale now</p>
+	</div>
+	<!--Jumbotron element with a Google Map-->
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-4" >
+				<h4>Where will you find us?</h4>
+				<p>Putnam County Conservation District </p>
+				<div id="click">
+					<p> Click Bigfoot on the map to see the address.</p>
+					<p> More information to be added.</p>
+				</div>
+			</div>
+			<!--Add a map -->
+			<div class="col-sm-8" >
+				<div id="map" >
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Element bg-4 with three columns-->
+	<div class="container-fluid bg-4 text-center">    
+		<h3>Passed festivals</h3>
+			<div id="text">
+				<p>Looking back at three years of Bigfoot</p>
+			</div>
+			<!--Grid row-->
+			<div class="row">
+			<!--Grid column-->
+				<div class="col-sm-4" >
+					<div id="myCarousel_1" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel_1" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel_1" data-slide-to="1"></li>
+							<li data-target="#myCarousel_1" data-slide-to="2"></li>
+						</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/2012_band3.jpg" alt="2012 band 3">
+								<div class="carousel-caption">
+									<h3>2012</h3>
+									<p>Lorem ipsum band 1.</p>
+								</div> 
+							</div>
+							<div class="item">
+								<img src="img/2012_band6.jpg" alt="2012 band 6">
+								<div class="carousel-caption">
+								<h3>2012</h3>
+								<p>Lorem ipsum band 2.</p>
+							</div> 
+						</div>
+						<div class="item">
+							<img src="img/2012_band4.jpg" alt="2012 band 4">
+							<div class="carousel-caption">
+								<h3>2012</h3>
+								<p>Lorem ipsum band 3.</p>
+							</div> 
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel_1" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel_1" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!--Grid column-->
+			<div class="col-sm-4" > 
+				<div id="myCarousel_2" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel_2" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel_2" data-slide-to="1"></li>
+						<li data-target="#myCarousel_2" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/2013_band7.jpg" alt="2012 band 3">
+								<div class="carousel-caption">
+									<h3>2013</h3>
+									<p>Lorem ipsum band 1.</p>
+								</div> 
+						</div>
+						<div class="item">
+							<img src="img/2013_band5.jpg" alt="2012 band 6">
+							<div class="carousel-caption">
+								<h3>2013</h3>
+								<p>Lorem ipsum band 2.</p>
+							</div> 
+						</div>
+						<div class="item">
+							<img src="img/2013_teen.jpg" alt="2012 band 4">
+							<div class="carousel-caption">
+								<h3>2013</h3>
+								<p>Lorem ipsum band 3.</p>
+							</div> 
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel_2" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel_2" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!--Grid column-->
+			<div class="col-sm-4"> 
+				<div id="myCarousel_3" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel_3" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel_3" data-slide-to="1"></li>
+						<li data-target="#myCarousel_3" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/2015_band.jpg" alt="2015 band 3">
+							<div class="carousel-caption">
+								<h3>2015</h3>
+								<p>Lorem ipsum band 1.</p>
+							</div> 
+						</div>
+						<div class="item">
+							<img src="img/2015_mix.jpg" alt="2015 band 6">
+							<div class="carousel-caption">
+								<h3>2015</h3>
+								<p>Lorem ipsum band 2.</p>
+							</div> 
+						</div>
+						<div class="item">
+							<img src="img/2015_show.jpg" alt="2015 band 4">
+							<div class="carousel-caption">
+								<h3>2015</h3>
+								<p>Lorem ipsum band 3.</p>
+							</div> 
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel_3" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel_3" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<!-- Search for a partial files _footer and _script -->
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</div>
+</body>
+</html>

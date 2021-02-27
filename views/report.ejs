@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- set a responsive fixed width container -->
+<body class="report" id="report" data-spy="scroll" data-target=".navbar" onload="checkCookie()" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<div class="container-fluid bg-5 text-center">
+		<h2 >Reports</h2> 
+	</div>
+	<div class="container-fluid bg-7">
+    <!--  Reponse from PayPal REST API with a list of invoices -->
+		<table class="table" id="pp_inv">
+		</table>
+	</div> 
+</main>
+
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>

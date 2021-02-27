@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+to offset from top for the position of scroll. -->
+<body class="gallery" id="myPage" data-spy="scroll" onload="checkCookie()" data-target=".navbar" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<!-- Grid row -->
+	<div class="row">
+		<!-- Grid column -->
+		<div class="gallery_btn">
+			<div class="col-md-12 d-flex justify-content-center mb-6">
+				<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+				<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2012">2012</button>
+				<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2013">2013</button>
+				<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2015">2015</button>
+			</div>
+			<!-- Grid column -->
+			</div>
+		</div>
+		<div class="gallery_img" id="gallery_img">
+			<div class="mb-3 pics animation all 2012">
+				<a href="img/2012_1.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2012_1.jpg" class="img-fluid"  alt="Band 1 in 2012">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2012">
+				<a href="img/2012_2.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2012_2.jpg" class="img-fluid"  alt="Band 2 in 2012">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2012">
+				<a href="img/2012_3.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2012_3.jpg" class="img-fluid"  alt="Band 3 in 2012">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2013">
+				<a href="img/2013_1.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2013_1.jpg" class="img-fluid"  alt="Band 1 in 2013">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2013">
+				<a href="img/2013_2.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2013_2.jpg" class="img-fluid" alt="Band 2 in 2013">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2013">
+				<a href="img/2013_3.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2013_3.jpg" class="img-fluid" alt="Band 3 in 2013">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2015">
+				<a href="img/2015_1.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2015_1.jpg" class="img-fluid" alt="Band 1 in 2015">
+				</a>
+			</div>	  
+			<div class="mb-3 pics animation all 2015">
+				<a href="img/2015_2.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2015_2.jpg" class="img-fluid" alt="Band 2 in 2015">
+				</a>
+			</div>
+			<div class="mb-3 pics animation all 2015">
+				<a href="img/2015_3.jpg" data-size="1200x900" target="_blank">
+					<img src="img/2015_3.jpg" class="img-fluid" alt="Band 3 in 2015">
+				</a>
+			</div>
+		</div>
+	</div>
+
+</main>
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>

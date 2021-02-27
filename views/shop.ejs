@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+to offset from top for the position of scroll. -->
+<body class="shop" id="shop" data-spy="scroll" data-target=".navbar" onload="checkCookie()" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<!--Element bg-5 with general information about tickets-->
+	<div class="container-fluid bg-5 text-center">
+		<h2>Bigfoot 2019</h2>
+	</div>
+	<!--Create a pricing container-->
+	<div class="container-fluid">
+		<div class="ticket_prices">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">  
+						<div class="panel-heading">
+							<h3>Poster </h3>
+						</div>
+						<div class="panel-body">
+							<a href="img/bfposter.png" width="200" height="auto"  data-size="1200x900" target="_blank">
+								<img src="img/bfposter.png" class="img-fluid" alt="Poster">
+							</a>
+						</div>
+						<div class="panel-footer">
+							<h4>$10</h4>
+							<button class="btn btn-lg" data-toggle="modal" data-target="#myModal1" >Buy</button>
+						</div>
+					</div> 
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal1" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4><span class="glyphicon glyphicon-lock"></span> Bigfoot 2019</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form">
+									<div class="form-group">
+										<label for="poster" id="post_label"><span class="glyphicon glyphicon-shopping-cart"></span> Poster, $10</label>
+										<select class="form-control" id="poster" name="poster">
+											<option disabled="disabled" selected="selected">How many?</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>   
+									<button type="button" class="btn btn-block" onclick="post_total(); checkCookie()" data-dismiss="modal">Add to basket 
+										<span class="glyphicon glyphicon-ok"></span>
+									</button>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+									<span class="glyphicon glyphicon-remove"></span> Cancel
+								</button>
+								<p>Need <a href="#">help?</a></p>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>Sticker</h3>
+						</div>
+					<div class="panel-body">
+						<a href="img/sticker.png" data-size="1200x900" target="_blank">
+							<img src="img/sticker.png" class="img-fluid" alt="Sticker">
+						</a> 		
+					</div>
+					<div class="panel-footer">
+						<h4>$5</h4>
+						<button class="btn btn-lg" data-toggle="modal" data-target="#myModal2" >Buy</button>
+					</div>
+				</div> 
+			</div> 
+			<!-- Modal -->
+			<div class="modal fade" id="myModal2" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span> Bigfoot 2019</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="sticker" id="stick_label"><span class="glyphicon glyphicon-shopping-cart"></span> Sticker, $5</label>
+									<select class="form-control" id="sticker" name="sticker">
+										<option disabled="disabled" selected="selected">How many?</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<button type="button" class="btn btn-block" onclick="stick_total(); checkCookie()" data-dismiss="modal">Add to basket 
+									<span class="glyphicon glyphicon-ok"></span>
+								</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> Cancel
+							</button>
+							<p>Need <a href="#">help?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h3>Button badge</h3>
+					</div>
+					<div class="panel-body">
+						<a href="img/badge.png" data-size="1200x900" target="_blank">
+							<img src="img/badge.png" class="img-fluid" alt="Poster">
+						</a>
+					</div>
+					<div class="panel-footer">
+						<h4>$10</h4>
+						<button class="btn btn-lg" data-toggle="modal" data-target="#myModal3" >Buy</button>
+					</div>
+				</div> 
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal3" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4><span class="glyphicon glyphicon-lock"></span>Bigfoot 2019</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="btnbadge" id="btn_label"><span class="glyphicon glyphicon-shopping-cart"></span> Button badge, $10</label>
+									<select class="form-control" id="btnbadge" name="btnbadge">
+										<option disabled="disabled" selected="selected">How many?</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>  
+								<button type="button" class="btn btn-block" onclick="button_total(); checkCookie()" data-dismiss="modal">Add to basket 
+									<span class="glyphicon glyphicon-ok"></span>
+								</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> Cancel
+							</button>
+							<p>Need <a href="#">help?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">  
+					<div class="panel-heading">
+						<h3>T-shirt </h3>
+					</div>
+					<div class="panel-body">
+						<a href="img/shirt.png" width="200" height="auto"  data-size="1200x900" target="_blank">
+							<img src="img/shirt.png" class="img-fluid" alt="T-shirt">
+						</a>
+					</div>
+					<div class="panel-footer">
+						<h4>$20</h4>
+						<button class="btn btn-lg" data-toggle="modal" data-target="#myModal4" >Buy</button>
+					</div>
+				</div> 
+			</div	
+			<!-- Modal -->
+			<div class="modal fade" id="myModal4" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span> Bigfoot 2019</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="tshirt" id="tsh_label"><span class="glyphicon glyphicon-shopping-cart"></span> T-shirt, $20</label>
+									<select class="form-control" id="tshirt" name="tshirt">
+										<option disabled="disabled" selected="selected">How many?</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="tshirt_size"><span class="glyphicon glyphicon-user"></span> Size</label>
+									<select class="form-control" id="tshirt_size" name="ts_size">
+										<option selected disabled value="" style="display:none">What size?</option>
+										<option value="small">Small</option>
+										<option value="medium">Medium</option>
+										<option value="large">Large</option>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-block" onclick="tshirt_total(); checkCookie()" data-dismiss="modal">Add to basket 
+									<span class="glyphicon glyphicon-ok"></span>
+								</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> Cancel
+							</button>
+							<p>Need <a href="#">help?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h3>Tank top</h3>
+					</div>
+					<div class="panel-body">
+						<a href="img/shirt_ns.png" data-size="1200x900" target="_blank">
+							<img src="img/shirt_ns.png" class="img-fluid" alt="Tank top">
+						</a> 		
+					</div>
+					<div class="panel-footer">
+						<h4>$15</h4>
+						<button class="btn btn-lg" data-toggle="modal" data-target="#myModal5" >Buy</button>
+					</div>
+				</div> 
+			</div> 
+			<!-- Modal -->
+			<div class="modal fade" id="myModal5" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span> Bigfoot 2019</h4>
+						</div>
+					<div class="modal-body">
+						<form role="form">
+							<div class="form-group">
+								<label for="tshirt_nosl" id="tank_label"><span class="glyphicon glyphicon-shopping-cart"></span> Tank top, $15</label>  
+								<select class="form-control" id="tshirt_nosl" name="tshirt_nosl">
+									<option disabled="disabled" selected="selected" >How many?</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="tshirt_nosl_size"><span class="glyphicon glyphicon-user"></span> Size</label>
+								<select class="form-control" id="tshirt_nosl_size" required>
+									<option disabled="disabled" selected="selected" value="" style="display:none">What size?</option>
+									<option value="small">Small</option>
+									<option value="medium">Medium</option>
+									<option value="large">Large</option>	
+								</select>
+							</div>
+							<button type="button" class="btn btn-block" onclick="top_total(); checkCookie()" data-dismiss="modal">Add to basket 
+								<span class="glyphicon glyphicon-ok"></span>
+							</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+							<span class="glyphicon glyphicon-remove"></span> Cancel
+						</button>
+						<p>Need <a href="#">help?</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default text-center">
+				<div class="panel-heading">
+					<h3>Wristband</h3>
+				</div>
+				<div class="panel-body">
+					<a href="img/wristb.png" data-size="1200x900" target="_blank">
+						<img src="img/wristb.png" class="img-fluid" alt="Wristband">
+					</a>
+				</div>
+				<div class="panel-footer">
+					<h4>$10</h4>
+					<button class="btn btn-lg" data-toggle="modal" data-target="#myModal6" >Buy</button>
+				</div>
+			</div> 
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal6" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span>Bigfoot 2019</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="wistb" id="wb_label"><span class="glyphicon glyphicon-shopping-cart"></span> Wristband, $10</label>
+									<select class="form-control" id="wistb" name="wistb">
+										<option disabled="disabled" selected="selected">How many?</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<button type="button" class="btn btn-block" onclick="wband_total(); checkCookie()" data-dismiss="modal">Add to basket 
+									<span class="glyphicon glyphicon-ok"></span>
+								</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> Cancel
+							</button>
+							<p>Need <a href="#">help?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div> 
+	</div>
+</main>
+
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,953 @@
+/** Set style of the body element **/
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: rgb(255,245,243); 
+	width: 100%; margin: 0%;    
+}
+
+/** Set overflow-x to hidden to remove scrolling mechanism to the right and left **/
+html, body {
+	overflow-x: hidden; 
+}
+
+/** Set the style of a container element **/
+.container{
+	border: 0px; margin: 0px; padding: 0px;
+}
+
+/** Set the font colour of the menue tabs to dark grey, padding left and right to 10px and margin to 1px **/
+.nav.navbar-nav.navbar-left li a{
+    color: rgb(68,93,108); padding-right: 10px; padding-left: 10px; margin: 1px;	
+}
+/** Set the font colour to light pink and the background colour to dark grey of the menu tabs on hover and active **/
+.nav.navbar-nav.navbar-left li a:hover, .nav.navbar-nav.navbar-left li a:focus, .nav.navbar-nav.navbar-left li.active a{
+    color: rgb(255,245,243) !important; background-color: rgb(68,93,108) !important; border-radius: 5px;
+}
+
+/** Set the margin-bottom of the navbar-left element**/
+.nav.navbar-nav.navbar-left{
+	margin-bottom: 3px; 
+}
+
+/** Set the font colour to light pink and the background colour to dark grey of menu buttons **/
+body.index a.index, body.tickets a.tickets, body.bands a.bands, body.vendors a.vendors,
+body.gallery a.gallery, body.shop a.shop, body.connect a.connect{
+	color: rgb(255,245,243) !important; background-color: rgb(68,93,108)!important; 
+	border-radius: 5px;
+}
+
+/** Set the margin=right of the button that replaces the navigation bar on collapse **/
+.navbar-toggle{
+	margin-right: 18px;
+}
+
+/** Set the style of container-fluid**/
+.container-fluid{
+    padding-right:0px; padding-left:0px; margin-top: 0px; margin-bottom: 0px;
+	margin-right:auto; margin-left:auto;	
+}
+
+/** Set the style of the logo **/
+.row .logo img{
+	width: 200px; height: auto; margin-bottom: 20px; margin-top: 5px; 
+}
+
+/** Set the style of the pull-right element on hover on the navigation bar **/
+.nav.navbar-nav.nav.navbar-nav.pull-right li a:hover{
+	color: rgb(167,195,144) /* light green */
+	!important; background-color: transparent;
+}
+
+/** Remove the outline and set the background colour to transparent 
+ *  of the pull-right element on the navigation bar
+**/
+.nav.navbar-nav.nav.navbar-nav.pull-right li a:focus{
+	outline: none !important; background-color: transparent;
+}
+
+/** Set the style of the rightbox element **/
+.rightbox{
+	margin-left: 10px; position:relative; 
+}
+
+/** Set the style of the button in the pull-right element on the navigation bar **/
+.nav.navbar-nav.nav.navbar-nav.pull-right.nav>li>a{
+	padding-bottom: 0px; color: rgb(68,93,108); /* dark grey */
+	text-align: right; font-size: 12px; 
+	padding-top: 0px; padding-right: 2px; 
+}
+
+/** Set the padding-left of the buttons in the collapsed navigation bar **/
+#myNavbar.navbar-collapse.collapse.in ul li{
+	padding-left: 15px;
+}
+
+/** Set the border-radius, height and width of the map element **/
+#map {
+     height: 400px; width: 100%; /* The width is the width of the column */
+	 border-radius: 12px;
+      }
+	  
+/** Set the style of the jumbotron element on the bands and vendors pages **/
+.bands .jumbotron, .vendors .jumbotron{
+    border-radius: 0 !important; background-color: rgb(255,245,243); /* light pink */
+	padding-left: 13px; padding-top: 1px;
+	padding-bottom: 1px; color: rgb(68,93,108); /* dark grey */
+	text-align: center; letter-spacing: 3px; 
+}
+
+/** Set the font size of the jumbotron element **/
+.jumbotron p{
+	font-size: 12px;
+}
+
+/** Make the font to bold of h4 header tag in the jumbotron element **/
+.jumbotron h4{
+	font-weight: bold;
+}
+
+/** Remove the default margin-bottom and rounded borders in navbar **/
+.navbar{
+    padding-top: 0px; padding-bottom: 0px; border: 0px; border-radius: 0px; margin-bottom: 0px;
+    font-size: 16px; letter-spacing: 3px; background-color: rgb(255,245,243); /* light pink */
+}
+
+/** Set the style of the h2 heading tag **/
+h2{
+	font-weight: bold; font-size: 32px;
+}
+
+/** Set the style of the h3 heading tag **/
+h3{
+	font-weight: bold; font-size: 18px;
+}
+
+/** Set the style of the bg-1 container **/
+.bg-1{ 
+    background-color: rgb(167,195,144); /* light green */
+    color: rgb(255,245,243); /* light pink */
+	letter-spacing: 4px; letter-spacing: 3px
+}
+
+/** Set the style of the image in the bg-1 container **/
+.bg-1 img{
+	  border-radius: 50%; display: block; margin-left: auto; margin-right: auto;
+}
+
+/** Set the style of the bg-2 container **/
+.bg-2{ 
+    background-color: rgb(238, 68, 38); /* red */
+    color: rgb(255,245,243); /* light pink */
+	letter-spacing: 3px
+}
+
+/** Set the style of the bg-3 container **/
+.bg-3{ 
+    background-color: rgb(202,129,182); /* violet */
+    color: rgb(255,245,243); /* light pink */
+	letter-spacing: 3px;
+}
+
+/** Set the style of the footer **/
+footer{
+	padding-top: 50px; font-size: 12px;	padding-left:13px; color: rgb(68,93,108); /* dark grey */
+}
+
+/** Set the style of the bg-4 container **/
+.bg-4{ 
+    background-color: rgb(93,188,210); /* blue */
+	color: rgb(255,245,243); /* light pink */
+	border:0px; padding-bottom: 7px;
+}
+
+/** Set the style of the image in the bg-4 container **/
+.bg-4 img{
+	display: block; margin-left: auto; margin-right: auto; width: 400px; height: auto; 
+}
+
+/** Set the margin-bottom of the slides in myCarousel_1 and myCarousel_2 **/
+#myCarousel_1.slide, #myCarousel_2.slide{
+	margin-bottom: 5px;	
+}
+
+/** Set the letter spacing of h3 header tag and p tag in the bg-4 element **/
+.bg-4 h3, .bg-4 #text p {
+	letter-spacing: 3px;
+}
+
+/** Set the style of the bg-5 element **/
+.bg-5{ 
+    color: rgb(68,93,108); padding-top: 40px; padding-bottom: 30px; /* dark grey */
+	letter-spacing: 3px 
+}
+
+/** Set the style of the row element **/
+.row{
+	color: rgb(68,93,108); /* dark grey */
+	margin: auto;
+}
+
+/** Set the style of the border of the bootstrap grid element col-sm-8 **/
+.jumbotron .col-sm-8{
+	border-top: 7px solid rgb(255,245,243); /*light pink */
+}
+
+/** Set the background colour of the jumbotron element on the index page **/
+.index .jumbotron{
+	background-color: rgb(255,245,243); /* light pink */
+}
+
+/** Set the style of text-uppercase in the h5 header tag**/
+footer h5.text-uppercase{
+	font-family: "Lucida Grande", "Arial", sans-serif; color: rgb(68,93,108); /* dark grey */
+}
+
+/** Set the style of the links on hover, active and focus in footer **/
+footer a:hover, footer a:active, footer a:focus{
+	 text-decoration: none !important; color: rgb(167,195,144);
+}
+
+/** Set the style of the links in the footer **/
+footer li a{
+	color: rgb(68,93,108); 
+}
+
+/** Set the margin-top of the text-uppercase in the h5 header tag**/
+#footer h5.text-uppercase{
+	margin-top: 0px; 
+}
+
+/** Set the font colour on hover of the text-uppercase in the h5 header tag in the footer **/
+#footer h5.text-uppercase:hover{
+	color: rgb(167,195,144) !important; /* green */
+}
+
+
+/** Footer **/
+/** Set the style of the footer-copyright element **/
+.footer-copyright{
+	text-align: center; margin-top: 20px;
+}
+
+/** Set the style of social media icons**/
+.social i.fa{
+	padding-right: 30px; font-size: 30px;
+}
+
+/** Buy Tickets page **/
+/** Set the style panel of the Buy Tickets page  **/
+.tickets .panel {
+	border: 1px solid rgb(167,195,144); /* dark grey*/
+	border-radius:5px;
+	transition: box-shadow 0.5s;
+}
+
+/** Set the style of the shadow of the panel's boxes on the Buy Tickets page  **/
+.tickets .panel:hover {
+	box-shadow: 3px 0px 20px rgba(167,195,144, 0.3); /*dark grey*/
+}
+
+/** Set the border, background and font color of the panel's button on the Buy Tickets page on hover **/
+.tickets .panel-footer .btn:hover {
+	background-color: rgb(238, 68, 38, 0.1) !important; /*Set the background to red with opacity 0.1 */
+	color: rgb(238, 68, 38);/*Set the font color to dark grey*/
+}
+
+/** Set the outline to none for the button on focus in the panels footer on the Buy Tickets page **/
+.tickets .panel-footer .btn:focus {
+	outline: none;
+}
+
+/*Set the font and background colour, padding and border radius of the heading of the panel on the Buy Tickets page*/
+.tickets .panel-heading {
+	color: rgb(255,245,243) !important; /*light pink*/
+	background-color: rgb(167,195,144) !important; /*dark green*/
+	padding: 10px; border-bottom: 1px solid transparent; border-top-left-radius: 0px;
+	border-top-right-radius: 0px; border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+/** Set the background and border-top of the panel-footer on the Buy Tickets page**/
+.tickets .panel-footer {
+	background-color: rgb(255, 255, 255) !important; border-top: 1px solid rgb(255,245,243);
+}
+
+/** Set the font size and colour of the h3 header tag in the panel-footer on the Buy Tickets page **/
+.tickets .panel-footer h3 {
+	font-size: 32px; color: rgb(68,93,108); /* dark grey */
+}
+
+/** Set the size and colour of the h4 header tag in the panel-footer on the Buy Tickets page**/
+.tickets .panel-footer h4 {
+	color: rgb(68,93,108); font-size: 14px;
+}
+
+/** Set the style of the button in the panel-footer element on the Buy Tickets page **/
+.tickets .panel-footer .btn {
+	margin: 15px 0; background-color: rgb(238, 66, 38); color: rgb(255,245,243);
+}
+
+/** Set the style of the modal-header on the Buy Ticket page **/
+.tickets .modal-header{
+	border: 5px solid rgb(167,195,144);border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+
+/* Add a dark gray background color to the modal header and center text */
+.tickets .modal-header, .tickets .modal-header h4, .tickets .modal-header.close {
+	background-color: rgb(167,195,144); color: rgb(255,245,243) !important;
+	text-align: center; font-size: 22px;
+}
+
+/** Set the close button style **/
+.tickets button.close{
+	color: rgb(255,245,243) !important ;
+}
+
+/** Set the padding of the  header and body elements on the Buy Ticket page **/
+.tickets .modal-header, .tickets .modal-body {
+	padding: 30px 35px;
+}
+
+/** Set the style of the button on the Tickets page **/
+.tickets button.btn.btn-block{
+	background-color: rgb(68,93,108); /* dark grey */
+	color: rgb(255,245,243); /* light pink */
+}
+
+/** Set the style of the button on hover **/
+.tickets button.btn.btn-block:hover {
+	background-color: rgb(68,93,108,0.1) !important; /* dark grey */
+	color: rgb(68,93,108); /* dark grey*/
+}
+
+/** Change the colour of button-danger on hover to red with opacity 0.1 **/
+.tickets .btn-danger:hover{
+	background-color: rgb(238, 66, 38, 0.1) !important; /*red*/
+	color: rgb(238, 66, 38); /* red */
+	border-color: transparent;	
+}
+
+/* Bands page */
+/* Set the well element backgrond to blue */
+.bands .well.well-lg{
+	background-color: rgb(93,188,210); /* blue */
+	border: none; margin-top: 60px; padding: 40px;
+	text-align: center; color: rgb(255,245,243);
+}
+
+/** Set the style of the jumbotron element in bg-6 container **/
+.bg-6 .jumbotron{ 
+    color: rgb(68,93,108); padding-top: 40px; padding-bottom: 30px; /* dark grey */
+	letter-spacing: 3px 
+}
+
+/** Set the style of the link in the jumbotron element on the Bands page **/
+.bands .jumbotron li a{
+	color: rgb(238, 66, 38) !important;	
+}
+
+/** Set the color of tabs background and font on the Bands page **/
+.bands .jumbotron li.active>a{
+    color: rgb(255,245,243) !important;	/* light pink */
+	background-color: rgb(238, 66, 38) !important; /*red*/
+	border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+
+/** Set the style of the link on hover in the jumbotron element on the Bands page **/
+.bands .jumbotron li a:hover{
+	background-color: rgb(238,66,38,0.1) !important; /* red */
+	border: none;
+}
+
+/** Set the style of the container in the jumbotron element on the Bands page **/
+.bands .jumbotron.container {
+	padding: 60px 120px;
+}
+
+/** Set the style of the band class element on the Bands page **/
+.bands .band {
+	border: 10px solid transparent; margin-bottom: 25px; width: 80%;
+	height: 80%; opacity: 0.9;
+}
+
+/** Set the style of the band class element on hover on the Bands page **/
+.bands .band:hover {
+	border-color: #f1f1f1;
+}
+
+/** Set the style of the p tag in the jumbotron element on the Bands page **/
+.bands .jumbotron .row p{
+	margin-bottom: 0px;
+}
+
+/** Set the margin-top of the iframe on the Bands page **/
+.bands iframe{
+	margin-top: 20px;
+}
+
+/** Vendors page **/
+/** Set the letter spacing of the paragraph in jumbotron on the Vendors page **/
+.vendors .jumbotron p{
+	letter-spacing: 1px; 
+}
+
+/** Set the well element style on the Vendors page **/
+.vendors .well.well-lg{
+	background-color: rgb(202,129,182); /* blue */
+	border: none; margin-top: 60px; padding: 40px;
+	text-align: center; color: rgb(255,245,243);
+}
+	
+/** Set the image element margin on the Vendors page **/	
+.vendors img.img-circle{ 
+    margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/** Gallery page **/
+/** Set the style of the images on the Gallery page **/
+.gallery img.img-fluid{
+	width:300px; height:300px; margin-bottom: 15px !important; border-radius: 5px; 
+	margin-left:auto; margin-right: auto; display: block;
+}
+
+/** Set the style of the row on the Gallery page **/
+.gallery main .row{
+	padding-top: 60px; padding-bottom: 20px
+}
+
+/** Set the columns number to 3 and width to 33% on the Gallery page**/
+.gallery_img {
+	-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-width: 33%;
+	-moz-column-width: 33%; column-width: 33%; 
+}
+
+/** Set the transition of the images to 350ms on the Gallery page **/
+.gallery_img .pics{
+	-webkit-transition: all 350ms ease; transition: all 350ms ease; 
+}
+
+/** Scale the animation elements to 1 on the Gallery page **/
+.gallery_img .animation{
+	-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); 
+}
+
+/** Set the column count and width of the images if the device screen width is less than 450px **/
+@media (max-width: 450px){
+.gallery_img {
+	-webkit-column-count: 1; -moz-column-count: 1;
+	column-count: 1; -webkit-column-width: 100%;
+	-moz-column-width: 100%; column-width: 100%;
+}
+}
+
+/** Set the padding of the button filter if the device screen width is less than 400px **/
+@media (max-width: 400px) {
+.gallery .btn.filter {
+	padding-left: 1.1px; padding-right: 1.1px;
+}
+}
+
+/** Set the style of the buttons on the Gallery page **/
+.gallery .gallery_btn button{
+	background-color: rgb(238, 66, 38) !important; /*Set the background colour to red with opacity 0.1 */
+	color: rgb(255,245,243);
+}
+
+/** Set the style of the buttons on hover and focus on the Gallery page **/
+.gallery .gallery_btn button:hover, .gallery .gallery_btn button:focus {
+	background-color: rgb(238, 68, 38, 0.1) !important; /* red with opacity 0.1 */
+	color: rgb(68,93,108); /* dark grey */
+	box-shadow: none!important; outline: 0;
+}
+
+/** Shop **/
+/** Set the background colour and font color of the panel's button on the Shop page on hover **/
+.shop .panel-footer .btn:hover {
+	background-color: rgb(202,129,182, 0.3) !important; /* red with opacity 0.1 */
+	color: rgb(202,129,182); /* dark grey */
+}
+
+/** Set the font and background colour, padding and border radius of the heading of the panel on the Shop page **/
+.shop .panel-heading {
+	color: (255,245,243) !important; /* light pink */
+	background-color: transparent !important; /* dark green */
+	padding: 10px; border-bottom: 1px solid transparent; border-top-left-radius: 0px;
+	border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;
+}
+
+/** Set the style of the panel-footer element on the Shop page **/
+.shop .panel-footer {
+	background-color: transparent !important; border-color: transparent; 
+}
+
+/** Set the style of the h3 header tag in the panel footer on the Shop page **/
+.shop .panel-footer h3 {
+	font-size: 32px; color: rgb(68,93,108);
+}
+
+/** Set the style of the h4 header tag in the panel footer on the Shop page **/
+.shop .panel-footer h4 {
+	color: rgb(68,93,108); font-size: 14px;
+}
+
+/** Set the style of the button in the panel footer on the Shop page **/
+.shop .panel-footer .btn {
+	margin: 15px 0; background-color: rgb(202,129,182); /* violet */
+	color: rgb(255,245,243);
+}
+
+/** Set the style of the panel-default element on the Shop page**/
+.shop .panel.panel-default{
+	background-color: transparent; border: 0px;
+}
+
+/** Set the style of the images on the Shop page**/
+.shop img{
+	height: 200px; width:auto; margin: 2px; border-radius: 5px;
+}
+	
+/** Set the border style of the modal element on the Shop page**/
+.shop #myModal{
+	border: 1px solid rgb(202,129,182);
+}
+
+/** Set the style of the modal-header element on the Shop page**/
+.shop .modal-header{
+	border: 5px solid rgb(202,129,182); border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+
+/** Add a dark gray background color to the modal header and center text on the Shop page **/
+.shop .modal-header, .shop .modal-header h4, .shop .modal-header.close {
+	background-color: rgb(202,129,182); /* violet */
+	color: rgb(255,245,243) !important; text-align: center; font-size: 22px;
+}
+
+/** Set the font colour of the close button on the Shop page **/
+.shop button.close{
+	color: rgb(255,245,243) !important ;
+}
+
+/** Set the padding of the modal-header and modal-body elements on the Shop page **/
+.shop .modal-header, .modal-body {
+	padding: 30px 35px;
+}
+
+/** Set the style of the button on the Shop page **/
+.shop button.btn.btn-block{
+	background-color: rgb(68,93,108); /* dark grey */
+	color: rgb(255,245,243); /* light pink */
+}
+
+/** Set the style of the button on hover on the Shop page **/
+.shop button.btn.btn-block:hover {
+	background-color: rgb(68,93,108,0.1) !important; /* dark grey */
+	color: rgb(68,93,108); /* dark grey */
+}
+
+/** Change the colour of button-danger on the Shop page **/
+.shop .btn-danger{
+	background-color: rgb(202,129,182) !important; /*red*/
+	border-color: rgb(202,129,182) !important; /*red*/
+}
+
+/** Change the colour of button-danger on hover on the Shop page*/
+.shop .btn-danger:hover{
+	background-color: rgb(202,129,182, 0.1) !important; /*red with opacity 0.1*/
+	color: rgb(202,129,182); /* red */
+	border: none;
+}
+
+/** Remove the outline of the button on focus on the Shop page **/	
+.shop .panel-footer .btn:focus {
+	outline: none;
+}
+
+/** Set the font colour of the form-control element on the Shop page **/	
+.shop .form-control{
+	color: rgb(162,162,162); /* grey */
+}
+
+/** Connect With Us page **/
+/** Set the style of the well element on the Connect With Us page **/
+.connect .well.well-lg{
+	background-color: rgb(238, 66, 38); border: none; margin-top: 60px; padding: 40px;
+	text-align: center; color: rgb(255,245,243);
+}
+
+/** Set the padding of the container of the jumbotron element on the Connect With Us page**/
+.connect .jumbotron.container {
+	padding: 60px 120px;
+}
+
+/** Set the padding and a font size of the social media icons **/
+.connect .well i.fa{
+	padding-left: 10px; padding-right: 10px; font-size: 20px;
+}
+
+/** Set the style of the margin-top jumbotron element on the Connect With Us page**/
+.connect .jumbotron{
+	margin-top: 50px; 
+}
+
+/** Set the style of the h2 header tag in the jumbotron on the Connect With Us page**/
+.connect .jumbotron h2{
+	padding-bottom: 20px; letter-spacing: 3px;
+}
+
+/** Set the letter spacing the links in the accordion on the Connect With Us page**/
+.connect #accordion .panel-title a{
+	letter-spacing: 3px;
+}
+
+/** Set the letter spacing of the pannel-body on the Connect With Us page **/
+.connect #accordion .pannel-body{
+	letter-spacing: 1px;
+}
+
+/** Set the style of the jumbotron element on the Connect With Us page **/
+.connect .jumbotron{
+    border-radius: 0 !important; background-color: rgb(255,245,243); /* light pink */
+	padding-left: 13px; padding-top: 1px;
+	padding-bottom: 1px; color: rgb(68,93,108); /* dark grey */
+	text-align: center;
+}
+
+/** Set the style of the panel-heading on the Connect With Us page **/
+.connect .panel-default>.panel-heading{ 
+	background-color: rgb(167,195,144); /* green */
+	color: rgb(255,245,243); /* light pink */
+}
+
+/** Set the style of the links on the panel-heading on the Connect With Us page**/
+.connect .panel-default>.panel-heading a{ 
+	text-decoration: none;
+}
+
+/** Set the colour of the links in the well element on the Connect With Us page**/
+.connect .well a{
+	color: rgb(255,245,243); /* light pink */
+}
+
+/** Log in modal **/
+/** Set the full-width of the input fields in the Log in modal **/
+#login_modal input[type=email], input[type=password]{
+	width: 100%; padding: 5px 5px; margin: 5px 0;
+	border: 1px solid rgb(68,93,108); /* dark grey */
+}
+
+/** Set the style of the in the Login modal **/
+#login_modal #login_cont label{
+	letter-spacing: 2px;
+}
+
+/* Set a style for all buttons in the Login modal */
+#login_modal #login_cont button{
+	background-color: rgb(68,93,108); /* dark grey */
+	color: rgb(255,255,255); /* white */
+	padding: 14px 20px; margin: 5px 0; border: none; cursor: pointer;
+	width: 100%; border-radius: 5px; letter-spacing: 2px;
+}
+
+/** Set the style of the button on hover in the Login modal **/
+#login_modal #login_cont button:hover{
+	background-color: rgb(68,93,108, 0.1); /* green with opacity 0.1 */
+	color: rgb(68,93,108);
+
+}
+
+/** Set the width, padding and the background colour of the cancel button in the Login modal **/
+#login_modal .cancelbtn{
+	width: auto; padding: 10px 18px; background-color: rgb(238,66,38); /* red */
+    border: none; color: rgb(255,255,255); /* white */
+	cursor: pointer; border-radius: 5px; letter-spacing: 2px;
+}
+
+/** Set the style of the cancel button in the Login modal **/
+#login_modal .cancelbtn:hover{
+	background-color: rgb(238,66,38, 0.1); /* red with opacity 0.1 */
+	color: rgb(238,66,38); /* red */
+}
+
+/** Center the image and position the close button in the Login modal **/
+#login_modal .imgcontainer{
+	text-align: center; margin: 24px 0px 12px 0px;
+}
+
+/** Set the size of the logo in the login modal **/
+#login_modal img{
+	width: 30%; height: auto; border-radius: 20%;
+}
+
+/** Set the padding of the container-fluid element in the Login modal **/
+#login_modal .container-fluid{
+	padding: 16px;
+}
+
+/** Set the style of the password span element in the Login modal **/
+#login_modal span.pass{
+	float: right; padding-top: 16px;
+}
+
+/** Set the style of the Modal background **/
+#login_modal.modal{
+	display: none; /* hide by default */
+	z-index: 1; /* sit on top */
+	left: 0; top: 0; width: 100%; /* show full width */
+	height: 100%; /* show full height */
+	overflow: auto; /* enable scrolling */
+	background-color: rgb(0,0,0); /* black */
+	background-color: rgb(0,0,0,0.5); /* black with opacity */
+	padding-top: 5px;
+}
+
+/** Set the style of the modal content **/
+#login_modal .modal-content{
+	background-color: rgb(254, 254, 254); /* white */
+	margin: 2% auto 2% auto; /** 2% from the top and the bottom **/
+	border: 1px solid rgb(68,93,108); /* dark grey*/
+	width: 70%; 
+}
+
+/** Set the style of the close button **/
+#login_modal .close{
+	position: absolute; right: 15px; top: 0;
+	font-size: 35px; font-weight: bold;
+  	color: rgb(68,93,108); /* dark grey */
+}
+
+/** Set the style of the login modal close button on hover and focus in the Login modal **/
+#login_modal .close:hover, #login_modal .close:focus{
+	color: rgb(68,93,108); /* grey */
+	cursor: pointer;
+}
+
+/** Add zoom animation to the login modal **/
+#login_modal .animate{
+	-webkit-animation: animatezoom 0.6s; animation: animatezoom 0.6s;
+}
+
+/** Simulate a zoom effect of the Login modal **/
+@-webkit-keyframes animatezoom{
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+
+/** Define the start and ending points of the zoom  of the Login modal **/  
+@keyframes animatezoom{
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+/** Set the display for the Forgot Password option and Cancel button on small screens **/
+@media screen and (max-width: 300px){
+span.pass{
+    display: block; float: none;
+  }
+  #login_modal .cancelbtn{
+    width: 100%;
+  }
+}
+
+/** Set the style of the container in the Login modal **/
+ #login_modal .container{
+	background-color:rgb(255, 255, 255);
+}
+
+/** Register page **/
+/** Add the style for padding to container-fluid **/
+.register h2{
+	padding: 50px !important; text-align: center;  color: rgb(255,255,255);
+}
+
+/** Set the style of the input fields on the Register page **/
+.register#register .bg-1 input[type=text], .register#register .bg-1 input[type=password], .register input[type=email], 
+.register input[type=tel], .register input[type=number], .register#register .bg-1 select {
+	width: 100%; padding-left: 5px; margin: 5px 0 5px 0;
+	display: inline-block; border: none;
+	background: rgb(255,255,255); /* white */
+}
+
+/** Set the style of the input fields on focus on the Register page **/
+.register#register .bg-1 input[type=text]:focus,.register#register .bg-1 input[type=password]:focus, .register input[type=email]:focus, 
+.register input[type=tel]:focus, .register input[type=number]:focus, 
+.register select:focus, .register disabled:focus {
+	background-color: rgb(255,255,255);   
+	box-shadow: 1px 1px 1px 1px rgb(143, 209, 224) inset, 1px 1px 1px 1px rgb(143, 209, 224)
+}
+
+/** Set the style of the input fields on hover on the Register page **/
+.register#register .bg-1 input[type=text]:hover,.register#register .bg-1 input[type=password]:hover, .register input[type=email]:hover, 
+.register input[type=tel]:hover, .register input[type=year]:hover, 
+.register#register .bg-1 select:hover, .register disabled:hover {
+	box-shadow: 1px 1px 1px 1px rgb(143, 209, 224) inset, 1px 1px 1px 1px rgb(143, 209, 224);
+}
+
+/** Set a style for the submit button on the Register page **/
+.register #reg_btn.btn.btn-default, .register #confirm_reg .btn.btn-default{
+	background-color: rgb(68,93,108); /* dark grey */
+	color: rgb(255,245,243); /* light pink */
+	padding: 16px 20px; margin: 8px 0; border: none; cursor: pointer;
+	opacity: 0.9; float: center;
+}
+
+/** Set the style of the button on hover on the Register page **/
+.register  .container-fluid #reg_btn.btn.btn-default:hover {
+	background-color: rgb(192, 207, 216); /* grey */
+	color: rgb(68,93,108); /* dark grey */
+}
+
+/** Add a blue text color to links **/
+.register  a {
+	color: rgb(0,89,179); /* blue */
+}
+
+/** Set the style of the letter-spacing of the label of the checkbox elements on the Register page **/
+.register .reg_checkbox label {
+	letter-spacing: 1px;
+}
+
+/** Set the style of the Register button on the Register page **/
+.register #reg_btn{
+	letter-spacing: 3px;
+}
+
+/** Set the style of the checkboxes on the Register page **/
+.register .reg_checkbox input[type=checkbox]{
+	height: 30px; width: 30px; 
+}
+
+/** Set the font colour of the form-control element on the Register page **/
+.register .form-control{
+	color: rgb(162,162,162); /* grey */
+}
+
+/** Set the style of the Confirm_reg element on the Register page **/
+.register #confirm_reg{
+	float: center; text-align: center; width:100%;
+	margin-bottom: 100px; letter-spacing: 1px; display: none;
+}
+
+/** Set the style of the confirm_subs element on the Register page **/
+.newsletter #confirm_subs{
+	float: center; text-align: center; width:100%;
+	margin-bottom: 100px; letter-spacing: 1px; display: none;
+}
+
+/** About page, Terms page and Privacy page **/
+/** Set the style of the bg-5 element **/
+.about .bg-5 p, .terms .bg-5 p, .privacy .bg-5 p{
+	letter-spacing: 0px; text-align: left; padding: 15px;
+}
+
+/** Newsletter page **/
+/** Set the style of the form element on the Newsletter page **/
+.newsletter form {
+	border: 5px solid rgb(255, 255, 255); 
+}
+
+/** Set the style of the container-fluid on the Newsletter page **/
+.newsletter .newsletter_container .container-fluid {
+	padding: 20px; background-color: rgb(255, 255, 255);  /* white */
+}
+
+/** Set the style of the input fields on the Newsletter page **/
+.newsletter input[type=text], .newsletter input[type=email] {
+	width: 80%; padding: 10px; margin: 8px 0; display: inline-block;
+	border: 1px solid rgb(68,93,108); box-sizing: border-box;
+}
+
+/** Set the style of the input fields on hover on the Newsletter page **/
+.newsletter input[type=text]:hover, .newsletter input[type=email]:hover {
+	border-color: rgb(192, 207, 216); /* light grey */
+	color: rgb(68,93,108); /* dark grey */
+}
+
+/** Set the style of the submit type input field on the Newsletter page **/
+.newsletter input[type=submit] {
+	width: 30%; padding: 10px; margin: 8px 0; display: inline-block;
+	border: 1px solid rgb(68,93,108); /* dark grey */
+	box-sizing: border-box; background-color: rgb(68,93,108); /* dark grey */
+	color: rgb(255, 255, 255); /* white */
+	border-radius: 5px;
+}
+
+/** Set the style of the submit type input fields on hover on the Newsletter page **/
+.newsletter input[type=submit]:hover {
+	box-shadow: 1px 1px 1px 1px rgb(143, 209, 224) inset, 1px 1px 1px 1px rgb(143, 209, 224); /* light blue */
+}
+
+	
+/** Basket page **/
+/** Set the style of the bg-5 element on the Basket page **/
+.basket .bg-5{ 
+    color: rgb(68,93,108); /* dark grey */
+	padding-top: 40px; padding-bottom: 10px; 
+	letter-spacing: 1px; background-color: rgb(255, 255, 255);
+}
+
+/** Set the style of the  on the Basket page **/
+.basket .bg-7{ 
+    color: rgb(68,93,108); /* dark grey */
+	padding: 20px 5px 20px 5px; 
+	letter-spacing: 1px; background-color: rgb(255, 255, 255);
+}
+
+/** Set a style for the PayPal button **/
+/** Add a blue text color to links **/
+.basket  a{
+	color: rgb(0,89,179); /* blue */
+}
+
+/** Set the letter spacing of the reg_btn on the Basket page **/
+.basket #reg_btn{
+	letter-spacing: 3px;
+}
+
+/** Set the style of the price element on the Basket page **/
+.basket span.price {
+	float: right; color: rgb(68,93,108); /* dark grey */
+}
+
+/** Set the style of the empty basket and sum element on the Basket page **/
+.basket #empty_basket, .basket #sum{
+	font-weight: bold; text-align: center;
+}
+
+/** Set the style of the remove element on the Basket page **/
+.basket .remove{
+	color: rgb(255,255,255); /* white */
+	background-color: rgb(238, 66, 38); /* red */
+	border: none;
+}
+
+/** Set the style of the paypal-button-container on the Basket page **/
+.basket #paypal-button-container{
+	display: none;
+}
+
+/** Set the style of the bg-8 container on the Basket page **/
+.basket .bg-8{
+	background-color: rgb(255,255,255); /* white */
+	color: rgb(68,93,108); /* dark grey */
+	text-align: center; font-size: 14px;
+}
+
+/** Set the style of the button in bg-7 element on the Basket page **/
+.cancel .bg-7 .btn {
+	background-color: rgb(68,93,108); /* dark grey */
+	color: rgb(255, 255, 255); /* white */
+	border: none; border-radius: 5px; display: inline-block; 
+}
+
+/** Report page **/
+/** Set the style of the bg-5 and bg-7 container on the Report page **/
+.report .bg-5,.report .bg-7 {
+	background-color: rgb(255, 255, 255); /* white */
+	color: rgb(68,93,108);	/* dark grey */
+}
+
+/** Set the style of the  on the Report page **/
+.newsletter .bg-5{
+	background-color: rgb(255,255,255); /* white */
+	color: rgb(68,93,108); /* dark grey */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container -->
+<body class="basket" id="basket" data-spy="scroll" data-target=".navbar" onload="checkCookie(); checkTableCookie()" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<div id="bst_title" class="container-fluid bg-5 text-center">
+		<h2 >Your shopping basket</h2> 
+	</div>
+	<div class="container-fluid bg-8 " >
+		<div id="transaction" class="collapse">
+		</div>
+	</div>
+
+	<div class="container-fluid bg-7">
+ 		<table class="table" id="basket_table">
+		</table>
+		<div id="empty_basket"></div>
+        <div id="sum"></div>
+	</div> 
+
+	<!-- PayPal button -->
+	<div class="container-fluid bg-5 text-center">
+		<div id="paypal-button-container"></div>
+	</div>
+</main>
+
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>

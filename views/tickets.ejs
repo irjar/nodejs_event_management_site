@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+
+</head>
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+to offset from top for the position of scroll. -->
+<body class="tickets" id="tickets" data-spy="scroll" data-target=".navbar" onload="checkCookie()" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<!--Element bg-5 with general information about tickets-->
+	<div class="container-fluid bg-5 text-center">
+		<h2>Tickets prices 2020</h2>
+		<p>Select your ticket</p>
+	</div>
+	<!--Create a pricing container-->
+	<div class="container-fluid">
+		<div class="ticket_prices">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">  
+						<div class="panel-heading">
+							<h1>VIP PASS </h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>All three days</strong></p>
+							<p>Entrance</p>
+							<p>Tent camping area</p> 
+						</div>
+						<div class="panel-footer">
+							<h3>$75</h3>
+							<h4>per person</h4>
+							<button class="btn btn-lg" data-toggle="modal" data-target="#myModal1">Buy</button>
+						</div>
+					</div> 	
+				</div>		
+				<!-- Modal -->
+				<div class="modal fade" id="myModal1" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form" id="vip_form">
+									<div class="form-group">
+										<label for="vip_pass" id="vip_label"><span class="glyphicon glyphicon-shopping-cart"></span> VIP pass, $75 per person</label>
+										<select class="form-control" id="vip_pass" name="vip_pass">
+											<option disabled="disabled" selected="selected">How many?</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>  
+									<button type="button" class="btn btn-block" onclick="vip_total(); checkCookie()" data-dismiss="modal">Add to your basket 
+										<span class="glyphicon glyphicon-ok"></span>
+									</button>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+									<span class="glyphicon glyphicon-remove"></span> Cancel
+								</button>
+								<p>Need <a href="/connect">help?</a></p>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h1>PRO</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>Two days</strong></p>
+							<p>Entrance</p>
+							<p>Tent camping area</p>
+						</div>
+						<div class="panel-footer">
+							<h3>$55</h3>
+							<h4>per person</h4>
+							<button class="btn btn-lg" data-toggle="modal" data-target="#myModal2" >Buy</button>
+						</div>
+					</div> 
+				</div> 
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form">
+									<div class="form-group">
+										<label for="pro" id="pro_label"><span class="glyphicon glyphicon-shopping-cart"></span> Pro ticket, $55 per person</label>
+										<select class="form-control" id="pro" name="pro">
+											<option disabled="disabled" selected="selected">How many?</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</div>
+									<button type="button" onclick="pro_total(); checkCookie()" class="btn btn-block" data-dismiss="modal">Add to your basket 
+										<span class="glyphicon glyphicon-ok"></span>
+									</button>
+								</form>
+							</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> Cancel
+							</button>
+							<p>Need <a href="/connect">help?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>BASIC</h1>
+					</div>
+					<div class="panel-body">
+						<p><strong>One day</strong></p>
+						<p>Entrance</p>
+						<p>Tent camping area</p>
+					</div>
+					<div class="panel-footer">
+						<h3 id="vip_price">$35</h3>
+						<h4>per person</h4>
+						<button class="btn btn-lg" data-toggle="modal" data-target="#myModal3" >Buy</button>
+					</div>
+				</div> 
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal3" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span>Tickets</h4>
+						</div>
+						<div class="modal-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="basic" id="basic_label"><span class="glyphicon glyphicon-shopping-cart"></span> Basic ticket, $35 per person</label>    
+									<select class="form-control" id="basic" name="basic">
+										<option disabled="disabled" selected="selected">How many?</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<button type="button" onclick="basic_total(); checkCookie()" class="btn btn-block" data-dismiss="modal">Add to your basket 
+									<span class="glyphicon glyphicon-ok"></span>
+								</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove"></span> Cancel
+							</button>
+							<p>Need <a href="/connect">help?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div> 
+	</div>
+</main>
+
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+to offset from top for the position of scroll. -->
+<body class="bands" id="index" data-spy="scroll" onload="checkCookie()" data-target=".navbar" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<div class="bg-6">
+		<div class="row">
+			<div class="col-sm-8">   
+				<!-- The tabs for different years of the festival -->	
+				<div class="jumbotron">
+					<h2>Lineup</h2>
+					<p>See artists info</p>
+					<div class="container">
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#home">2020</a></li>
+							<li><a data-toggle="tab" href="#menu1">2015</a></li>
+							<li><a data-toggle="tab" href="#menu2">2013</a></li>
+							<li><a data-toggle="tab" href="#menu3">2012</a></li>
+						</ul>
+						<!-- Display images for 2020 -->	
+						<div class="tab-content">
+							<div id="home" class="tab-pane fade in active">
+								<div class="container text-center">
+									<h3>2020</h3>
+									<p>Click images for details</p>
+									<br>
+									<div class="row">
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Double Dave Trio</strong></p><br>
+											<a href="#more1" data-toggle="collapse">
+												<img src="img/bf_xs.jpg" class="img-circle band" alt="Double Dave Trio">
+											</a>
+											<div id="more1" class="collapse">
+												<p>Jazz band</p>
+												<p>When: Friday 1pm-2pm</p>
+												<p><a href="https://soundcloud.com/guitarnowski" target="_blank">Links</a>
+												<iframe width="200" height="200" src="https://www.youtube.com/embed/1UFquKc7e04">
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Evacuate the Earth</strong></p><br>
+											<a href="#more2" data-toggle="collapse">
+												<img src="img/bf_xs.jpg" class="img-circle band" alt="Evacuate the Earth">
+											</a>
+											<div id="more2" class="collapse">
+												<p>Alternative rock band</p>
+												<p>When: Saturday 5pm-7pm</p>
+												<p><a href="https://evacuatetheearthmusic.bandcamp.com/" target="_blank">Links</a>
+												<iframe width="200" height="200" src="https://www.youtube.com/embed/1UFquKc7e04">
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Killer Moon</strong></p><br>
+											<a href="#more3" data-toggle="collapse">
+												<img src="img/bf_xs.jpg" class="img-circle band" alt="The Krank Daddies">
+											</a>
+											<div id="more3" class="collapse">
+												<p>Psychedelic rock band</p>
+												<p>When: Sunday: 8pm-10pm</p>
+												<p><a href="https://killermoonmusic.bandcamp.com/" target="_blank">Links</a>
+												<iframe width="200" height="200" src="https://www.youtube.com/embed/1UFquKc7e04">
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="menu1" class="tab-pane fade">
+								<div class="container text-center">
+									<!-- Display images for 2015 -->
+									<h3>2015</h3>
+									<p>Click images for details</p>
+									<br>
+									<div class="row">
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Pizza T</strong></p><br>
+											<a href="#more4" data-toggle="collapse">
+												<img src="img/15_bandks.jpg" class="img-circle band" alt="Pizza T">
+											</a>
+											<div id="more4" class="collapse">
+												<p>Comedy rock band</p>
+												<p>When: 2015</p>
+												<p><a href="https://en.wikipedia.org/wiki/The_Pizza_Underground" target="_blank">Links</a>
+												<iframe style="border: 0; width: 200px; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=1745904232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://dogsoffortune.bandcamp.com/album/ddds">DDD&#39;s by Dogs of Fortune</a></iframe>
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Dogs of Fortune</strong></p><br>
+											<a href="#more5" data-toggle="collapse">
+												<img src="img/2015_show.jpg" class="img-circle band" alt="Dogs of Fortune">
+											</a>
+											<div id="more5" class="collapse">
+												<p>Classic rock, prog rock and metal band</p>
+												<p>When: 2015</p>
+												<p><a href="https://dogsoffortune.bandcamp.com/" target="_blank">Links</a>
+												<iframe style="border: 0; width: 200px; height: 200px;" src="https://bandcamp.com/EmbeddedPlayer/album=1745904232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://dogsoffortune.bandcamp.com/album/ddds">DDD&#39;s by Dogs of Fortune</a></iframe>
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Herbert Wiser</strong></p><br>
+											<a href="#more6" data-toggle="collapse">
+												<img src="img/2015_band.jpg" class="img-circle band" alt="Herbert Wiser">
+											</a>
+											<div id="more6" class="collapse">
+												<p>Psychodelic rock band</p>
+												<p>When: 2015</p>
+												<p><a href="https://www.jambase.com/band/the-herbert-wiser-band" target="_blank">Links</a>
+												<iframe width="200" height="200" src="https://www.youtube.com/embed/5twEhj0H5X0">
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="menu2" class="tab-pane fade">
+								<div class="container text-center">
+									<!-- Display images for 2013 -->
+									<h3>2013</h3>
+									<p>Click images for details</p>
+									<br>
+									<div class="row">
+										<div class="col-sm-4">
+											<p class="text-center"><strong>See Turtles</strong></p><br>
+											<a href="#more7" data-toggle="collapse">
+												<img src="img/2013_band7.jpg" class="img-circle band" alt="See Turtles">
+											</a>
+											
+											<div id="more7" class="collapse">
+												<p>Alternative rock band</p>
+												<p>When: 2013</p>
+												<p><a href="https://en.wikipedia.org/wiki/The_Turtles" target="_blank">Links</a>
+												<iframe width="200" height="180" src="https://www.youtube.com/embed/MohL2DMlrxQ">
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Ahymnsa</strong></p><br>
+											<a href="#more8" data-toggle="collapse">
+												<img src="img/2013_teen.jpg" class="img-circle band" alt="Ahymnsa">
+											</a>
+											<div id="more8" class="collapse">
+												<p>Rock band</p>
+												<p>When: 2013</p>
+												<p><a href="https://ahymnsa.bandcamp.com/" target="_blank">Links</a>
+												<iframe width="200" height="180" src="https://www.youtube.com/embed/MohL2DMlrxQ">
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Machine Gun Moses</strong></p><br>
+											<a href="#more9" data-toggle="collapse">
+												<img src="img/2013_band5.jpg" class="img-circle band" alt="Machine Gun Moses">
+											</a>
+											<div id="more9" class="collapse">
+												<p>Funky rock, reggae, and soulful jam band</p>
+												<p>When: 2013</p>
+												<p><a href="https://machinegunmoses.bandcamp.com/" target="_blank">Links</a>
+												<iframe width="200" height="180" src="https://www.youtube.com/embed/MohL2DMlrxQ">
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="menu3" class="tab-pane fade">
+								<div class="container text-center">
+									<!-- Display images for 2012 -->
+									<h3>2012</h3>
+									<p>Click images for details</p>
+									<br>
+									<div class="row">
+										<div class="col-sm-4">
+											<p class="text-center"><strong>Kashmir</strong></p><br>
+											<a href="#more10" data-toggle="collapse">
+												<img src="img/2012_band3.jpg" class="img-circle band" alt="Kashmir">
+											</a>
+											<div id="more10" class="collapse">
+												<p>Alternative rock band</p>
+												<p>When: 2012</p>
+												<p><a href="https://en.wikipedia.org/wiki/Kashmir_(band)" target="_blank">Links</a>
+												<iframe width="200" height="180" src="https://www.youtube.com/embed/Khy29Z9jXlk">
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>The Voodoo Fix</strong></p><br>
+											<a href="#more11" data-toggle="collapse">
+												<img src="img/2012_band6.jpg" class="img-circle band" alt="The Voodoo Fix">
+											</a>
+											<div id="more11" class="collapse">
+												<p>Rock band</p>
+												<p>When: 2012</p>
+												<p><a href="https://www.thevoodoofix.com/" target="_blank">Links</a>
+												<iframe width="200" height="180" src="https://www.youtube.com/embed/Khy29Z9jXlk">
+												</iframe>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<p class="text-center"><strong>The Krank Daddies</strong></p><br>
+											<a href="#more12" data-toggle="collapse">
+												<img src="img/2012_band4.jpg" class="img-circle band" alt="The Krank Daddies">
+											</a>
+											<div id="more12" class="collapse">
+												<p>Rock band</p>
+												<p>When: 2012</p>
+												<p><a href="https://krankdaddies.net/about" target="_blank">Links</a>
+												<iframe width="200" height="180" src="https://www.youtube.com/embed/Khy29Z9jXlk">
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">        
+				<div class="well well-lg">
+					<h3>Register to perform!</h3>
+					<p>Send an email to <a href="mailto:bigfoot@gmail.com?subject=HTML link">perform@bigfoot.com</a> 
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+<% include partials/_footer %>
+</footer>
+
+</body>
+</html>

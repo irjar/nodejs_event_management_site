@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Search for a partial file _head -->
+<head>
+<% include partials/_head %>
+</head>
+
+<!-- Search for a partial file _script with links to formatting files -->
+<% include partials/_script %>
+
+<!-- Set a responsive fixed width container. Set the number of pixels for the data-offset attribute
+to offset from top for the position of scroll. -->
+<body class="register" id="register" data-spy="scroll" data-target=".navbar" onload="checkCookie()" data-offset="60">
+
+<!-- Search for a partial file _menu -->
+<header>
+<% include partials/_menu %>
+</header>
+
+<main>
+	<div class="container-fluid bg-1">
+		<h2>Register</h2>
+		<form class="form-horizontal" id="reg_form" style="display:" action="#">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="regfname">First name*</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="regfname" placeholder="First name" name="fname"  maxlength="30" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="reglname">Last name*</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="reglname" placeholder="Last name" name="lname"  maxlength="30" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="reg_email">Email*</label>
+					<div class="col-sm-8">
+						<input type="email" class="form-control" autocomplete="email" id="reg_email" placeholder="Email" name="email" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="conf_email">Confirm email*</label>
+					<div class="col-sm-8">
+						<input type="email" class="form-control" autocomplete="email" id="conf_email" placeholder="Confirm email" name="conf_email" onblur="match_email()"																												 required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="regpass">Password*</label>
+					<div class="col-sm-8">          
+						<input type="password" class="form-control"  id="regpass" placeholder="Password" name="regpass"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required oninvalid="this.setCustomValidity('Password must contain: at least one number, a lower case and an upper case letter, and minimum 8 characters')" oninput="setCustomValidity('')">
+					</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-4" for="tel">Phone number</label>
+						<div class="col-sm-8">
+							<input type="tel" class="form-control" id="tel" placeholder="Phone number" name="tel">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" id="dobirth">	
+					<div class="form-group">
+						<label class="control-label col-sm-4" for="dob">Date of birth</label>
+						<div class="col-sm-2">
+							<label class="sr-only" for="dob">Year</label>
+							<input type="number" min="1920" max="9999" class="form-control" id="dob" placeholder="Year" name="year" >
+						</div>
+					<div class="col-sm-3" id="month_id">
+						<label class="sr-only" for="day">Month</label>
+						<select class="form-control" id="month">
+							<option disabled="disabled" selected="selected">Month</option>
+							<option>January</option><option>February</option><option>March</option>
+							<option>April</option><option>May</option><option>June</option>
+							<option>July</option><option>August</option><option>September</option>
+							<option>October</option><option>November</option><option>December</option>				
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<label class="sr-only" for="day">Day</label>
+						<select class="form-control" id="day">
+							<option disabled="disabled" selected="selected">Day</option>
+							<option>1</option><option>2</option><option>3</option>
+							<option>4</option><option>5</option><option>6</option>
+							<option>7</option><option>8</option><option>9</option>
+							<option>10</option><option>11</option><option>12</option>
+							<option>13</option><option>14</option><option>15</option>
+							<option>16</option><option>17</option><option>18</option>
+							<option>19</option><option>20</option><option>21</option>
+							<option>22</option><option>23</option><option>24</option>
+							<option>25</option><option>26</option><option>27</option>
+							<option>28</option><option>29</option><option>30</option>
+							<option>31</option>
+						</select>
+					</div>
+				</div>
+			<div class="form-group">
+				<label class="control-label col-sm-4" for="street">Street and House Number</label>
+				<div class="col-sm-8">          
+					<input type="text" class="form-control" id="street" placeholder="Street and House Number" name="street"  maxlength="30" >
+				</div>
+			</div>		
+			<div class="form-group">
+				<label class="control-label col-sm-4" for="road">Name of the Road</label>
+				<div class="col-sm-8">          
+					<input type="text" class="form-control" id="road" placeholder="Name of the Road" name="road"  maxlength="30">
+				</div>
+			</div>		
+			<div class="form-group">
+				<label class="control-label col-sm-4" for="town">Town, City or State</label>
+				<div class="col-sm-8">          
+					<input type="text" class="form-control" id="town" placeholder="Town, City or State" name="town"  maxlength="30">
+				</div>
+			</div>		
+			<div class="form-group">
+				<label class="control-label col-sm-4" for="zipc">Zip code</label>
+				<div class="col-sm-8">          
+					<input type="text" class="form-control" id="zipc" placeholder="Zip code" name="zipc"  maxlength="10">
+				</div>
+			</div>		
+			<div class="reg_checkbox">
+				<div class="form-group">        
+					<label class="control-label col-sm-10" for="subscr">Subscribe to a newsletter</label>
+					<div class="col-sm-2">      
+						<input type="checkbox" name="subscribe" id="subsc" name="subsc">					
+					</div>	
+				</div>
+				<div class="form-group">        
+					<label class="control-label col-sm-10" for="tandc">I've read and accept <a href="/terms">Terms & Conditions*</a> </label>
+						<div class="col-sm-2">      
+							<input type="checkbox" name="tandc" id="tandc" required> 
+						</div>	
+				</div>
+			</div>		   
+			<div class="container-fluid">
+				<button type="submit" id="reg_btn" onclick="get_reg_data()" class="btn btn-default" >Register</button>
+			</div>		
+		</div>
+	</form>
+	</div>
+	<div id="confirm_reg"  >
+		<p>Your registration has been submitted. You can now log in.</p>
+		<button type="button" class="btn btn-default" onclick="document.getElementById('login_modal').style.display='block'">Log in</button>
+	</div>
+</main>
+
+</body>
+</html>
